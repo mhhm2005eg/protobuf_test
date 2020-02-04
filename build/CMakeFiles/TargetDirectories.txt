@@ -1,0 +1,3 @@
+/mnt/c/Data/workspace/protobuf_test/build/CMakeFiles/edit_cache.dir
+/mnt/c/Data/workspace/protobuf_test/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Data/workspace/protobuf_test/build/CMakeFiles/serializer.dir

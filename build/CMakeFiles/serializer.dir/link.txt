@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++11   CMakeFiles/serializer.dir/sources/serializer.cpp.o  -o bin/serializer -rdynamic 

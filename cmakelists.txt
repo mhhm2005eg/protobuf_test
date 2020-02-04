@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 2.8.9)
+project (protobuf_test)
+# Find required protobuf package
+find_package(protobuf CONFIG REQUIRED)
+
+if(protobuf_VERBOSE)
+  message(STATUS "Using Protocol Buffers ${Protobuf_VERSION}")
+endif()
+
+
+
+include_directories("./generated")
+include_directories("./protoc-3.11.3-win64/src")
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+add_executable(serializer sources/serializer.cpp)
+#add_executable(deserializer sources/deserializer.cpp)
