@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4527eefdf3bce6eebd6bf356f28bca818f732153fa80289b076ec104afa5ce41
-size 296
+file(REMOVE_RECURSE
+  "CMakeFiles/deserializer.dir/sources/deserializer.cpp.o"
+  "CMakeFiles/deserializer.dir/generated/matrix.pb.cc.o"
+  "bin/deserializer.pdb"
+  "bin/deserializer"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/deserializer.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
