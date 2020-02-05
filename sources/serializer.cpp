@@ -6,16 +6,15 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "matrix.pb.h"
 
-using namespace communication_matrix;
-        
 #include <iostream>
 #include <fstream>
 #include <string>
-//#include "partbook.pb.h"
+#include "matrix.pb.h"
+
 using namespace std;
- 
+using namespace communication_matrix;
+
 /* This function fills in a Part message based on user input.*/
 void PromptForPart(communication_matrix::Part* part) {
   cout << "Enter part ID number: ";

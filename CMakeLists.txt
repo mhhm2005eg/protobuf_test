@@ -15,7 +15,17 @@ include_directories("./generated")
 include_directories("${protobuf_repo}\\src")
 include_directories("${protobuf_repo}\\src\\google\\protobuf\\stubs")
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g ")
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g ")
+# Add c++11 flags
+if (CYGWIN)
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11")
+else()
+  set(CMAKE_CXX_STANDARD 11)
+  set(CMAKE_CXX_STANDARD_REQUIRED ON)
+  set(CMAKE_CXX_EXTENSIONS OFF)
+endif()
+
+
 
 if(MSVC AND protobuf_MSVC_STATIC_RUNTIME)
   foreach(flag_var

@@ -1,0 +1,511 @@
+Scanning dependencies of target serializer
+[ 16%] Building CXX object CMakeFiles/serializer.dir/sources/serializer.cpp.o
+In file included from /usr/include/c++/7/memory:74:0,
+                 from /home/medhat/Data/repository/protobuf/src/google/protobuf/stubs/common.h:41,
+                 from /home/medhat/Data/repository/protobuf/src/google/protobuf/stubs/time.h:33,
+                 from /usr/include/pthread.h:24,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/gthr-default.h:35,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/gthr.h:148,
+                 from /usr/include/c++/7/ext/atomicity.h:35,
+                 from /usr/include/c++/7/bits/ios_base.h:39,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from /home/medhat/Data/repository/protobuf_test/sources/serializer.cpp:13:
+/usr/include/c++/7/ext/concurrence.h:124:5: error: ‘__gthread_mutex_t’ does not name a type; did you mean ‘__pthread_mutex_s’?
+     __gthread_mutex_t _M_mutex;
+     ^~~~~~~~~~~~~~~~~
+     __pthread_mutex_s
+/usr/include/c++/7/ext/concurrence.h:169:5: error: ‘__gthread_mutex_t’ does not name a type; did you mean ‘__pthread_mutex_s’?
+     __gthread_mutex_t* gthread_mutex(void)
+     ^~~~~~~~~~~~~~~~~
+     __pthread_mutex_s
+/usr/include/c++/7/ext/concurrence.h: In constructor ‘__gnu_cxx::__mutex::__mutex()’:
+/usr/include/c++/7/ext/concurrence.h:134:11: error: ‘__gthread_active_p’ was not declared in this scope
+       if (__gthread_active_p())
+           ^~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:134:11: note: suggested alternative: ‘__pthread_cond_s’
+       if (__gthread_active_p())
+           ^~~~~~~~~~~~~~~~~~
+           __pthread_cond_s
+/usr/include/c++/7/ext/concurrence.h:135:33: error: ‘_M_mutex’ was not declared in this scope
+  __GTHREAD_MUTEX_INIT_FUNCTION(&_M_mutex);
+                                 ^~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:135:33: note: suggested alternative: ‘__mutex’
+  __GTHREAD_MUTEX_INIT_FUNCTION(&_M_mutex);
+                                 ^~~~~~~~
+                                 __mutex
+/usr/include/c++/7/ext/concurrence.h:135:2: error: ‘__GTHREAD_MUTEX_INIT_FUNCTION’ was not declared in this scope
+  __GTHREAD_MUTEX_INIT_FUNCTION(&_M_mutex);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/ext/concurrence.h: In destructor ‘__gnu_cxx::__mutex::~__mutex()’:
+/usr/include/c++/7/ext/concurrence.h:142:11: error: ‘__gthread_active_p’ was not declared in this scope
+       if (__gthread_active_p())
+           ^~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:142:11: note: suggested alternative: ‘__pthread_cond_s’
+       if (__gthread_active_p())
+           ^~~~~~~~~~~~~~~~~~
+           __pthread_cond_s
+/usr/include/c++/7/ext/concurrence.h:143:27: error: ‘_M_mutex’ was not declared in this scope
+  __gthread_mutex_destroy(&_M_mutex);
+                           ^~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:143:27: note: suggested alternative: ‘__mutex’
+  __gthread_mutex_destroy(&_M_mutex);
+                           ^~~~~~~~
+                           __mutex
+/usr/include/c++/7/ext/concurrence.h:143:2: error: ‘__gthread_mutex_destroy’ was not declared in this scope
+  __gthread_mutex_destroy(&_M_mutex);
+  ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:143:2: note: suggested alternative: ‘__pthread_mutex_s’
+  __gthread_mutex_destroy(&_M_mutex);
+  ^~~~~~~~~~~~~~~~~~~~~~~
+  __pthread_mutex_s
+/usr/include/c++/7/ext/concurrence.h: In member function ‘void __gnu_cxx::__mutex::lock()’:
+/usr/include/c++/7/ext/concurrence.h:150:11: error: ‘__gthread_active_p’ was not declared in this scope
+       if (__gthread_active_p())
+           ^~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:150:11: note: suggested alternative: ‘__pthread_cond_s’
+       if (__gthread_active_p())
+           ^~~~~~~~~~~~~~~~~~
+           __pthread_cond_s
+/usr/include/c++/7/ext/concurrence.h:152:30: error: ‘_M_mutex’ was not declared in this scope
+    if (__gthread_mutex_lock(&_M_mutex) != 0)
+                              ^~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:152:30: note: suggested alternative: ‘__mutex’
+    if (__gthread_mutex_lock(&_M_mutex) != 0)
+                              ^~~~~~~~
+                              __mutex
+/usr/include/c++/7/ext/concurrence.h:152:8: error: ‘__gthread_mutex_lock’ was not declared in this scope
+    if (__gthread_mutex_lock(&_M_mutex) != 0)
+        ^~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:152:8: note: suggested alternative: ‘__pthread_mutex_s’
+    if (__gthread_mutex_lock(&_M_mutex) != 0)
+        ^~~~~~~~~~~~~~~~~~~~
+        __pthread_mutex_s
+/usr/include/c++/7/ext/concurrence.h: In member function ‘void __gnu_cxx::__mutex::unlock()’:
+/usr/include/c++/7/ext/concurrence.h:161:11: error: ‘__gthread_active_p’ was not declared in this scope
+       if (__gthread_active_p())
+           ^~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:161:11: note: suggested alternative: ‘__pthread_cond_s’
+       if (__gthread_active_p())
+           ^~~~~~~~~~~~~~~~~~
+           __pthread_cond_s
+/usr/include/c++/7/ext/concurrence.h:163:32: error: ‘_M_mutex’ was not declared in this scope
+    if (__gthread_mutex_unlock(&_M_mutex) != 0)
+                                ^~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:163:32: note: suggested alternative: ‘__mutex’
+    if (__gthread_mutex_unlock(&_M_mutex) != 0)
+                                ^~~~~~~~
+                                __mutex
+/usr/include/c++/7/ext/concurrence.h:163:8: error: ‘__gthread_mutex_unlock’ was not declared in this scope
+    if (__gthread_mutex_unlock(&_M_mutex) != 0)
+        ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:163:8: note: suggested alternative: ‘__pthread_mutex_s’
+    if (__gthread_mutex_unlock(&_M_mutex) != 0)
+        ^~~~~~~~~~~~~~~~~~~~~~
+        __pthread_mutex_s
+/usr/include/c++/7/ext/concurrence.h: At global scope:
+/usr/include/c++/7/ext/concurrence.h:179:5: error: ‘__gthread_recursive_mutex_t’ does not name a type; did you mean ‘__recursive_mutex’?
+     __gthread_recursive_mutex_t _M_mutex;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+     __recursive_mutex
+/usr/include/c++/7/ext/concurrence.h:224:5: error: ‘__gthread_recursive_mutex_t’ does not name a type; did you mean ‘__recursive_mutex’?
+     __gthread_recursive_mutex_t* gthread_recursive_mutex(void)
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+     __recursive_mutex
+/usr/include/c++/7/ext/concurrence.h: In constructor ‘__gnu_cxx::__recursive_mutex::__recursive_mutex()’:
+/usr/include/c++/7/ext/concurrence.h:189:11: error: ‘__gthread_active_p’ was not declared in this scope
+       if (__gthread_active_p())
+           ^~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:189:11: note: suggested alternative: ‘__pthread_cond_s’
+       if (__gthread_active_p())
+           ^~~~~~~~~~~~~~~~~~
+           __pthread_cond_s
+/usr/include/c++/7/ext/concurrence.h:190:43: error: ‘_M_mutex’ was not declared in this scope
+  __GTHREAD_RECURSIVE_MUTEX_INIT_FUNCTION(&_M_mutex);
+                                           ^~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:190:43: note: suggested alternative: ‘__mutex’
+  __GTHREAD_RECURSIVE_MUTEX_INIT_FUNCTION(&_M_mutex);
+                                           ^~~~~~~~
+                                           __mutex
+/usr/include/c++/7/ext/concurrence.h:190:2: error: ‘__GTHREAD_RECURSIVE_MUTEX_INIT_FUNCTION’ was not declared in this scope
+  __GTHREAD_RECURSIVE_MUTEX_INIT_FUNCTION(&_M_mutex);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:190:2: note: suggested alternative: ‘__GTHREAD_RECURSIVE_MUTEX_INIT’
+  __GTHREAD_RECURSIVE_MUTEX_INIT_FUNCTION(&_M_mutex);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  __GTHREAD_RECURSIVE_MUTEX_INIT
+/usr/include/c++/7/ext/concurrence.h: In destructor ‘__gnu_cxx::__recursive_mutex::~__recursive_mutex()’:
+/usr/include/c++/7/ext/concurrence.h:197:11: error: ‘__gthread_active_p’ was not declared in this scope
+       if (__gthread_active_p())
+           ^~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:197:11: note: suggested alternative: ‘__pthread_cond_s’
+       if (__gthread_active_p())
+           ^~~~~~~~~~~~~~~~~~
+           __pthread_cond_s
+/usr/include/c++/7/ext/concurrence.h:198:37: error: ‘_M_mutex’ was not declared in this scope
+  __gthread_recursive_mutex_destroy(&_M_mutex);
+                                     ^~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:198:37: note: suggested alternative: ‘__mutex’
+  __gthread_recursive_mutex_destroy(&_M_mutex);
+                                     ^~~~~~~~
+                                     __mutex
+/usr/include/c++/7/ext/concurrence.h:198:2: error: ‘__gthread_recursive_mutex_destroy’ was not declared in this scope
+  __gthread_recursive_mutex_destroy(&_M_mutex);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:198:2: note: suggested alternative: ‘__recursive_mutex’
+  __gthread_recursive_mutex_destroy(&_M_mutex);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  __recursive_mutex
+/usr/include/c++/7/ext/concurrence.h: In member function ‘void __gnu_cxx::__recursive_mutex::lock()’:
+/usr/include/c++/7/ext/concurrence.h:205:11: error: ‘__gthread_active_p’ was not declared in this scope
+       if (__gthread_active_p())
+           ^~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:205:11: note: suggested alternative: ‘__pthread_cond_s’
+       if (__gthread_active_p())
+           ^~~~~~~~~~~~~~~~~~
+           __pthread_cond_s
+/usr/include/c++/7/ext/concurrence.h:207:40: error: ‘_M_mutex’ was not declared in this scope
+    if (__gthread_recursive_mutex_lock(&_M_mutex) != 0)
+                                        ^~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:207:40: note: suggested alternative: ‘__mutex’
+    if (__gthread_recursive_mutex_lock(&_M_mutex) != 0)
+                                        ^~~~~~~~
+                                        __mutex
+/usr/include/c++/7/ext/concurrence.h:207:8: error: ‘__gthread_recursive_mutex_lock’ was not declared in this scope
+    if (__gthread_recursive_mutex_lock(&_M_mutex) != 0)
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:207:8: note: suggested alternative: ‘__recursive_mutex’
+    if (__gthread_recursive_mutex_lock(&_M_mutex) != 0)
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        __recursive_mutex
+/usr/include/c++/7/ext/concurrence.h: In member function ‘void __gnu_cxx::__recursive_mutex::unlock()’:
+/usr/include/c++/7/ext/concurrence.h:216:11: error: ‘__gthread_active_p’ was not declared in this scope
+       if (__gthread_active_p())
+           ^~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:216:11: note: suggested alternative: ‘__pthread_cond_s’
+       if (__gthread_active_p())
+           ^~~~~~~~~~~~~~~~~~
+           __pthread_cond_s
+/usr/include/c++/7/ext/concurrence.h:218:42: error: ‘_M_mutex’ was not declared in this scope
+    if (__gthread_recursive_mutex_unlock(&_M_mutex) != 0)
+                                          ^~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:218:42: note: suggested alternative: ‘__mutex’
+    if (__gthread_recursive_mutex_unlock(&_M_mutex) != 0)
+                                          ^~~~~~~~
+                                          __mutex
+/usr/include/c++/7/ext/concurrence.h:218:8: error: ‘__gthread_recursive_mutex_unlock’ was not declared in this scope
+    if (__gthread_recursive_mutex_unlock(&_M_mutex) != 0)
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/ext/concurrence.h:218:8: note: suggested alternative: ‘__recursive_mutex’
+    if (__gthread_recursive_mutex_unlock(&_M_mutex) != 0)
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        __recursive_mutex
+In file included from /usr/include/c++/7/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/7/memory:81,
+                 from /home/medhat/Data/repository/protobuf/src/google/protobuf/stubs/common.h:41,
+                 from /home/medhat/Data/repository/protobuf/src/google/protobuf/stubs/time.h:33,
+                 from /usr/include/pthread.h:24,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/gthr-default.h:35,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/gthr.h:148,
+                 from /usr/include/c++/7/ext/atomicity.h:35,
+                 from /usr/include/c++/7/bits/ios_base.h:39,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from /home/medhat/Data/repository/protobuf_test/sources/serializer.cpp:13:
+/usr/include/c++/7/bits/shared_ptr_base.h: At global scope:
+/usr/include/c++/7/bits/shared_ptr_base.h:209:7: error: ‘_Atomic_word’ does not name a type; did you mean ‘__atomic_load’?
+       _Atomic_word  _M_use_count;     // #shared
+       ^~~~~~~~~~~~
+       __atomic_load
+/usr/include/c++/7/bits/shared_ptr_base.h:210:7: error: ‘_Atomic_word’ does not name a type; did you mean ‘__atomic_load’?
+       _Atomic_word  _M_weak_count;    // #weak + (#shared != 0)
+       ^~~~~~~~~~~~
+       __atomic_load
+/usr/include/c++/7/bits/shared_ptr_base.h: In constructor ‘std::_Sp_counted_base<_Lp>::_Sp_counted_base()’:
+/usr/include/c++/7/bits/shared_ptr_base.h:117:9: error: class ‘std::_Sp_counted_base<_Lp>’ does not have any field named ‘_M_use_count’
+       : _M_use_count(1), _M_weak_count(1) { }
+         ^~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:117:26: error: class ‘std::_Sp_counted_base<_Lp>’ does not have any field named ‘_M_weak_count’
+       : _M_use_count(1), _M_weak_count(1) { }
+                          ^~~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h: In member function ‘void std::_Sp_counted_base<_Lp>::_M_add_ref_copy()’:
+/usr/include/c++/7/bits/shared_ptr_base.h:138:20: error: ‘__atomic_add_dispatch’ is not a member of ‘__gnu_cxx’
+       { __gnu_cxx::__atomic_add_dispatch(&_M_use_count, 1); }
+                    ^~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:138:43: error: ‘_M_use_count’ was not declared in this scope
+       { __gnu_cxx::__atomic_add_dispatch(&_M_use_count, 1); }
+                                           ^~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:138:43: note: suggested alternative: ‘_M_get_use_count’
+       { __gnu_cxx::__atomic_add_dispatch(&_M_use_count, 1); }
+                                           ^~~~~~~~~~~~
+                                           _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h: In member function ‘void std::_Sp_counted_base<_Lp>::_M_release()’:
+/usr/include/c++/7/bits/shared_ptr_base.h:151:17: error: ‘__exchange_and_add_dispatch’ is not a member of ‘__gnu_cxx’
+  if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:151:46: error: ‘_M_use_count’ was not declared in this scope
+  if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+                                              ^~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:151:46: note: suggested alternative: ‘_M_get_use_count’
+  if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+                                              ^~~~~~~~~~~~
+                                              _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h:166:21: error: ‘__exchange_and_add_dispatch’ is not a member of ‘__gnu_cxx’
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:166:50: error: ‘_M_weak_count’ was not declared in this scope
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+                                                  ^~~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:166:50: note: suggested alternative: ‘_M_get_use_count’
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+                                                  ^~~~~~~~~~~~~
+                                                  _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h: In member function ‘void std::_Sp_counted_base<_Lp>::_M_weak_add_ref()’:
+/usr/include/c++/7/bits/shared_ptr_base.h:177:20: error: ‘__atomic_add_dispatch’ is not a member of ‘__gnu_cxx’
+       { __gnu_cxx::__atomic_add_dispatch(&_M_weak_count, 1); }
+                    ^~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:177:43: error: ‘_M_weak_count’ was not declared in this scope
+       { __gnu_cxx::__atomic_add_dispatch(&_M_weak_count, 1); }
+                                           ^~~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:177:43: note: suggested alternative: ‘_M_get_use_count’
+       { __gnu_cxx::__atomic_add_dispatch(&_M_weak_count, 1); }
+                                           ^~~~~~~~~~~~~
+                                           _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h: In member function ‘void std::_Sp_counted_base<_Lp>::_M_weak_release()’:
+/usr/include/c++/7/bits/shared_ptr_base.h:184:17: error: ‘__exchange_and_add_dispatch’ is not a member of ‘__gnu_cxx’
+  if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count, -1) == 1)
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:184:46: error: ‘_M_weak_count’ was not declared in this scope
+  if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count, -1) == 1)
+                                              ^~~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:184:46: note: suggested alternative: ‘_M_get_use_count’
+  if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count, -1) == 1)
+                                              ^~~~~~~~~~~~~
+                                              _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h: In member function ‘long int std::_Sp_counted_base<_Lp>::_M_get_use_count() const’:
+/usr/include/c++/7/bits/shared_ptr_base.h:202:33: error: ‘_M_use_count’ was not declared in this scope
+         return __atomic_load_n(&_M_use_count, __ATOMIC_RELAXED);
+                                 ^~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:202:33: note: suggested alternative: ‘_M_get_use_count’
+         return __atomic_load_n(&_M_use_count, __ATOMIC_RELAXED);
+                                 ^~~~~~~~~~~~
+                                 _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h: In member function ‘void std::_Sp_counted_base<_Lp>::_M_add_ref_lock() [with __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)0]’:
+/usr/include/c++/7/bits/shared_ptr_base.h:218:11: error: ‘_M_use_count’ was not declared in this scope
+       if (_M_use_count == 0)
+           ^~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:218:11: note: suggested alternative: ‘_M_get_use_count’
+       if (_M_use_count == 0)
+           ^~~~~~~~~~~~
+           _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h:220:9: error: ‘_M_use_count’ was not declared in this scope
+       ++_M_use_count;
+         ^~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:220:9: note: suggested alternative: ‘_M_get_use_count’
+       ++_M_use_count;
+         ^~~~~~~~~~~~
+         _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h: In member function ‘void std::_Sp_counted_base<_Lp>::_M_add_ref_lock() [with __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)1]’:
+/usr/include/c++/7/bits/shared_ptr_base.h:229:22: error: ‘__exchange_and_add_dispatch’ is not a member of ‘__gnu_cxx’
+       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, 1) == 0)
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:229:51: error: ‘_M_use_count’ was not declared in this scope
+       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, 1) == 0)
+                                                   ^~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:229:51: note: suggested alternative: ‘_M_get_use_count’
+       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, 1) == 0)
+                                                   ^~~~~~~~~~~~
+                                                   _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h: In member function ‘void std::_Sp_counted_base<_Lp>::_M_add_ref_lock() [with __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)2]’:
+/usr/include/c++/7/bits/shared_ptr_base.h:242:7: error: ‘_Atomic_word’ was not declared in this scope
+       _Atomic_word __count = _M_get_use_count();
+       ^~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:242:7: note: suggested alternative: ‘__atomic_load’
+       _Atomic_word __count = _M_get_use_count();
+       ^~~~~~~~~~~~
+       __atomic_load
+/usr/include/c++/7/bits/shared_ptr_base.h:245:8: error: ‘__count’ was not declared in this scope
+    if (__count == 0)
+        ^~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:245:8: note: suggested alternative: ‘count’
+    if (__count == 0)
+        ^~~~~~~
+        count
+/usr/include/c++/7/bits/shared_ptr_base.h:250:44: error: ‘_M_use_count’ was not declared in this scope
+       while (!__atomic_compare_exchange_n(&_M_use_count, &__count, __count + 1,
+                                            ^~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:250:44: note: suggested alternative: ‘_M_get_use_count’
+       while (!__atomic_compare_exchange_n(&_M_use_count, &__count, __count + 1,
+                                            ^~~~~~~~~~~~
+                                            _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h:250:59: error: ‘__count’ was not declared in this scope
+       while (!__atomic_compare_exchange_n(&_M_use_count, &__count, __count + 1,
+                                                           ^~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:250:59: note: suggested alternative: ‘count’
+       while (!__atomic_compare_exchange_n(&_M_use_count, &__count, __count + 1,
+                                                           ^~~~~~~
+                                                           count
+/usr/include/c++/7/bits/shared_ptr_base.h: In member function ‘bool std::_Sp_counted_base<_Lp>::_M_add_ref_lock_nothrow() [with __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)0]’:
+/usr/include/c++/7/bits/shared_ptr_base.h:260:11: error: ‘_M_use_count’ was not declared in this scope
+       if (_M_use_count == 0)
+           ^~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:260:11: note: suggested alternative: ‘_M_get_use_count’
+       if (_M_use_count == 0)
+           ^~~~~~~~~~~~
+           _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h:262:9: error: ‘_M_use_count’ was not declared in this scope
+       ++_M_use_count;
+         ^~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:262:9: note: suggested alternative: ‘_M_get_use_count’
+       ++_M_use_count;
+         ^~~~~~~~~~~~
+         _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h: In member function ‘bool std::_Sp_counted_base<_Lp>::_M_add_ref_lock_nothrow() [with __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)1]’:
+/usr/include/c++/7/bits/shared_ptr_base.h:272:22: error: ‘__exchange_and_add_dispatch’ is not a member of ‘__gnu_cxx’
+       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, 1) == 0)
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:272:51: error: ‘_M_use_count’ was not declared in this scope
+       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, 1) == 0)
+                                                   ^~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:272:51: note: suggested alternative: ‘_M_get_use_count’
+       if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, 1) == 0)
+                                                   ^~~~~~~~~~~~
+                                                   _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h: In member function ‘bool std::_Sp_counted_base<_Lp>::_M_add_ref_lock_nothrow() [with __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)2]’:
+/usr/include/c++/7/bits/shared_ptr_base.h:286:7: error: ‘_Atomic_word’ was not declared in this scope
+       _Atomic_word __count = _M_get_use_count();
+       ^~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:286:7: note: suggested alternative: ‘__atomic_load’
+       _Atomic_word __count = _M_get_use_count();
+       ^~~~~~~~~~~~
+       __atomic_load
+/usr/include/c++/7/bits/shared_ptr_base.h:289:8: error: ‘__count’ was not declared in this scope
+    if (__count == 0)
+        ^~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:289:8: note: suggested alternative: ‘count’
+    if (__count == 0)
+        ^~~~~~~
+        count
+/usr/include/c++/7/bits/shared_ptr_base.h:294:44: error: ‘_M_use_count’ was not declared in this scope
+       while (!__atomic_compare_exchange_n(&_M_use_count, &__count, __count + 1,
+                                            ^~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:294:44: note: suggested alternative: ‘_M_get_use_count’
+       while (!__atomic_compare_exchange_n(&_M_use_count, &__count, __count + 1,
+                                            ^~~~~~~~~~~~
+                                            _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h:294:59: error: ‘__count’ was not declared in this scope
+       while (!__atomic_compare_exchange_n(&_M_use_count, &__count, __count + 1,
+                                                           ^~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:294:59: note: suggested alternative: ‘count’
+       while (!__atomic_compare_exchange_n(&_M_use_count, &__count, __count + 1,
+                                                           ^~~~~~~
+                                                           count
+/usr/include/c++/7/bits/shared_ptr_base.h: In member function ‘void std::_Sp_counted_base<_Lp>::_M_add_ref_copy() [with __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)0]’:
+/usr/include/c++/7/bits/shared_ptr_base.h:303:9: error: ‘_M_use_count’ was not declared in this scope
+     { ++_M_use_count; }
+         ^~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:303:9: note: suggested alternative: ‘_M_get_use_count’
+     { ++_M_use_count; }
+         ^~~~~~~~~~~~
+         _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h: In member function ‘void std::_Sp_counted_base<_Lp>::_M_release() [with __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)0]’:
+/usr/include/c++/7/bits/shared_ptr_base.h:309:13: error: ‘_M_use_count’ was not declared in this scope
+       if (--_M_use_count == 0)
+             ^~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:309:13: note: suggested alternative: ‘_M_get_use_count’
+       if (--_M_use_count == 0)
+             ^~~~~~~~~~~~
+             _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h:312:17: error: ‘_M_weak_count’ was not declared in this scope
+           if (--_M_weak_count == 0)
+                 ^~~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:312:17: note: suggested alternative: ‘_M_get_use_count’
+           if (--_M_weak_count == 0)
+                 ^~~~~~~~~~~~~
+                 _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h: In member function ‘void std::_Sp_counted_base<_Lp>::_M_weak_add_ref() [with __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)0]’:
+/usr/include/c++/7/bits/shared_ptr_base.h:320:9: error: ‘_M_weak_count’ was not declared in this scope
+     { ++_M_weak_count; }
+         ^~~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:320:9: note: suggested alternative: ‘_M_get_use_count’
+     { ++_M_weak_count; }
+         ^~~~~~~~~~~~~
+         _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h: In member function ‘void std::_Sp_counted_base<_Lp>::_M_weak_release() [with __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)0]’:
+/usr/include/c++/7/bits/shared_ptr_base.h:326:13: error: ‘_M_weak_count’ was not declared in this scope
+       if (--_M_weak_count == 0)
+             ^~~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:326:13: note: suggested alternative: ‘_M_get_use_count’
+       if (--_M_weak_count == 0)
+             ^~~~~~~~~~~~~
+             _M_get_use_count
+/usr/include/c++/7/bits/shared_ptr_base.h: In member function ‘long int std::_Sp_counted_base<_Lp>::_M_get_use_count() const [with __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)0]’:
+/usr/include/c++/7/bits/shared_ptr_base.h:333:14: error: ‘_M_use_count’ was not declared in this scope
+     { return _M_use_count; }
+              ^~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_base.h:333:14: note: suggested alternative: ‘_M_get_use_count’
+     { return _M_use_count; }
+              ^~~~~~~~~~~~
+              _M_get_use_count
+In file included from /usr/include/c++/7/memory:82:0,
+                 from /home/medhat/Data/repository/protobuf/src/google/protobuf/stubs/common.h:41,
+                 from /home/medhat/Data/repository/protobuf/src/google/protobuf/stubs/time.h:33,
+                 from /usr/include/pthread.h:24,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/gthr-default.h:35,
+                 from /usr/include/x86_64-linux-gnu/c++/7/bits/gthr.h:148,
+                 from /usr/include/c++/7/ext/atomicity.h:35,
+                 from /usr/include/c++/7/bits/ios_base.h:39,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from /home/medhat/Data/repository/protobuf_test/sources/serializer.cpp:13:
+/usr/include/c++/7/bits/shared_ptr_atomic.h: In function ‘bool std::atomic_is_lock_free(const std::__shared_ptr<_Tp, _Lp>*)’:
+/usr/include/c++/7/bits/shared_ptr_atomic.h:74:14: error: there are no arguments to ‘__gthread_active_p’ that depend on a template parameter, so a declaration of ‘__gthread_active_p’ must be available [-fpermissive]
+       return __gthread_active_p() == 0;
+              ^~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/shared_ptr_atomic.h:74:14: note: (if you use ‘-fpermissive’, G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+In file included from /usr/include/c++/7/chrono:41:0,
+                 from /usr/include/c++/7/mutex:39,
+                 from /home/medhat/Data/repository/protobuf/src/google/protobuf/stubs/once.h:34,
+                 from /home/medhat/Data/repository/protobuf/src/google/protobuf/message_lite.h:49,
+                 from /home/medhat/Data/repository/protobuf/src/google/protobuf/generated_enum_util.h:36,
+                 from /home/medhat/Data/repository/protobuf/src/google/protobuf/map.h:48,
+                 from /home/medhat/Data/repository/protobuf/src/google/protobuf/generated_message_table_driven.h:34,
+                 from /home/medhat/Data/repository/protobuf_test/./generated/matrix.pb.h:26,
+                 from /home/medhat/Data/repository/protobuf_test/sources/serializer.cpp:16:
+/usr/include/c++/7/ctime: At global scope:
+/usr/include/c++/7/ctime:64:11: error: ‘::clock’ has not been declared
+   using ::clock;
+           ^~~~~
+/usr/include/c++/7/ctime:65:11: error: ‘::difftime’ has not been declared
+   using ::difftime;
+           ^~~~~~~~
+/usr/include/c++/7/ctime:66:11: error: ‘::mktime’ has not been declared
+   using ::mktime;
+           ^~~~~~
+/usr/include/c++/7/ctime:67:11: error: ‘::time’ has not been declared
+   using ::time;
+           ^~~~
+/usr/include/c++/7/ctime:68:11: error: ‘::asctime’ has not been declared
+   using ::asctime;
+           ^~~~~~~
+/usr/include/c++/7/ctime:69:11: error: ‘::ctime’ has not been declared
+   using ::ctime;
+           ^~~~~
+/usr/include/c++/7/ctime:70:11: error: ‘::gmtime’ has not been declared
+   using ::gmtime;
+           ^~~~~~
+/usr/include/c++/7/ctime:71:11: error: ‘::localtime’ has not been declared
+   using ::localtime;
+           ^~~~~~~~~
+/usr/include/c++/7/ctime:72:11: error: ‘::strftime’ has not been declared
+   using ::strftime;
+           ^~~~~~~~
+CMakeFiles/serializer.dir/build.make:62: recipe for target 'CMakeFiles/serializer.dir/sources/serializer.cpp.o' failed
+make[2]: *** [CMakeFiles/serializer.dir/sources/serializer.cpp.o] Error 1
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/serializer.dir/all' failed
+make[1]: *** [CMakeFiles/serializer.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
