@@ -1,22 +1,3 @@
-# The set of languages for which implicit dependencies are needed:
-set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Data/workspace/protobuf_test/sources/deserializer.cpp" "/mnt/c/Data/workspace/protobuf_test/build/CMakeFiles/deserializer.dir/sources/deserializer.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  ".././generated"
-  ".././protoc-3.11.3-win64/src"
-  )
-
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  )
-
-# Fortran module output directory.
-set(CMAKE_Fortran_TARGET_MODULE_DIR "")
+version https://git-lfs.github.com/spec/v1
+oid sha256:de2ee4df6a2b0384d98c1cf6b4a14a20e19a917de258515b034ffe8cbf4d53ed
+size 699

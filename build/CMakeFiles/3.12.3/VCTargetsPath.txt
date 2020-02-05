@@ -1,1 +1,3 @@
-C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/Common7/IDE/VC/VCTargets
+version https://git-lfs.github.com/spec/v1
+oid sha256:2195b4484c9daf590e796fa1e94d8de0cd33ef25d62267e78a0356d28996d47b
+size 88

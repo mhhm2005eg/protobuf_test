@@ -1,2 +1,3 @@
-protoc-3.11.3-win64\bin\protoc .\matrix.proto --cpp_out=.\generated
-rem cprotoc-c .\matrix.proto --c_out=.\generated
+version https://git-lfs.github.com/spec/v1
+oid sha256:2e82d90989d620090b1e2edc4577c36b3a501be2b7e567b633825aeaed09c247
+size 210

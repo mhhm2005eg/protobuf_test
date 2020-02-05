@@ -1,10 +1,3 @@
-file(REMOVE_RECURSE
-  "CMakeFiles/serializer.dir/sources/serializer.cpp.o"
-  "bin/serializer.pdb"
-  "bin/serializer"
-)
-
-# Per-language clean rules from dependency scanning.
-foreach(lang CXX)
-  include(CMakeFiles/serializer.dir/cmake_clean_${lang}.cmake OPTIONAL)
-endforeach()
+version https://git-lfs.github.com/spec/v1
+oid sha256:9f85bf4d330b157cc73d61052cc5c7085a596aa96a27c54b759377c17c56c6db
+size 286
