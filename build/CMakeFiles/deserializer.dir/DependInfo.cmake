@@ -4,16 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/medhat/Data/repository/protobuf_test/generated/matrix.pb.cc" "/home/medhat/Data/repository/protobuf_test/build/CMakeFiles/deserializer.dir/generated/matrix.pb.cc.o"
-  "/home/medhat/Data/repository/protobuf_test/sources/deserializer.cpp" "/home/medhat/Data/repository/protobuf_test/build/CMakeFiles/deserializer.dir/sources/deserializer.cpp.o"
+  "/home/m-hussai/data/workspace/protobuf_test/generated/matrix.pb.cc" "/home/m-hussai/data/workspace/protobuf_test/build/CMakeFiles/deserializer.dir/generated/matrix.pb.cc.o"
+  "/home/m-hussai/data/workspace/protobuf_test/sources/deserializer.cpp" "/home/m-hussai/data/workspace/protobuf_test/build/CMakeFiles/deserializer.dir/sources/deserializer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././generated"
-  "/home/medhat/Data/repository/protobuf/src"
-  "/home/medhat/Data/repository/protobuf/src/google/protobuf/stubs"
+  "/home/m-hussai/data/repositories/protobuf/src"
   )
 
 # Targets to which this target links.

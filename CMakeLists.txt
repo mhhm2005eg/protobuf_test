@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.9)
 project (protobuf_test)
 # Find required protobuf package
-set (protobuf_repo "/home/medhat/Data/repository/protobuf")
+set (protobuf_repo "/home/m-hussai/data/repositories/protobuf")
 set (protobuf_DIR "${protobuf_repo}/cmake/build/lib/cmake/protobuf")
 
 find_package(protobuf CONFIG REQUIRED)
@@ -13,7 +13,7 @@ endif()
 
 include_directories("./generated")
 include_directories("${protobuf_repo}\\src")
-include_directories("${protobuf_repo}\\src\\google\\protobuf\\stubs")
+
 
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g ")
 # Add c++11 flags

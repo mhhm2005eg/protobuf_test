@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/deserializer.dir/sources/deserializer.cpp.o"
   "CMakeFiles/deserializer.dir/generated/matrix.pb.cc.o"
-  "bin/deserializer.pdb"
+  "CMakeFiles/deserializer.dir/sources/deserializer.cpp.o"
   "bin/deserializer"
+  "bin/deserializer.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

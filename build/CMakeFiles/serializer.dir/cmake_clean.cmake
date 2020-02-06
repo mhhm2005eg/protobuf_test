@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/serializer.dir/sources/serializer.cpp.o"
   "CMakeFiles/serializer.dir/generated/matrix.pb.cc.o"
-  "bin/serializer.pdb"
+  "CMakeFiles/serializer.dir/sources/serializer.cpp.o"
   "bin/serializer"
+  "bin/serializer.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
